@@ -27,7 +27,8 @@ RSAT-SNMP,
 SNMP-Service, 
 WAS, 
 WAS-Process-Model, 
-WAS-Config-APIs  
+WAS-Config-APIs,
+Telnet-Client 
 -IncludeManagementTools
 
 Get-windowsFeature
