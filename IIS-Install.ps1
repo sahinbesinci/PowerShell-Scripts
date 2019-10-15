@@ -1,31 +1,33 @@
 Install-WindowsFeature -name Web-Server -IncludeManagementTools
-Install-WindowsFeature -name Web-Http-Redirect -IncludeManagementTools
-Install-WindowsFeature -name Web-DAV-Publishing -IncludeManagementTools
-Install-WindowsFeature -name Web-Custom-Logging -IncludeManagementTools
-Install-WindowsFeature -name Web-Log-Libraries -IncludeManagementTools
-Install-WindowsFeature -name Web-ODBC-Logging -IncludeManagementTools
-Install-WindowsFeature -name Web-Request-Monitor -IncludeManagementTools
-Install-WindowsFeature -name Web-Http-Tracing -IncludeManagementTools
-Install-WindowsFeature -name Web-Dyn-Compression -IncludeManagementTools
-Install-WindowsFeature -name Web-Basic-Auth -IncludeManagementTools
-Install-WindowsFeature -name Web-CertProvider -IncludeManagementTools
-Install-WindowsFeature -name Web-Client-Auth -IncludeManagementTools
-Install-WindowsFeature -name Web-Digest-Auth -IncludeManagementTools
-Install-WindowsFeature -name Web-Cert-Auth -IncludeManagementTools
-Install-WindowsFeature -name Web-Url-Auth -IncludeManagementTools
-Install-WindowsFeature -name Web-Windows-Auth -IncludeManagementTools
-Install-WindowsFeature -name Web-App-Dev -IncludeManagementTools
-Install-WindowsFeature -name Web-Net-Ext45 -IncludeManagementTools
-Install-WindowsFeature -name Web-Asp-Net45 -IncludeManagementTools
-Install-WindowsFeature -name NET-WCF-HTTP-Activation -IncludeManagementTools
-Install-WindowsFeature -name NET-WCF-Pipe-Activation -IncludeManagementTools
-Install-WindowsFeature -name NET-WCF-TCP-Activation -IncludeManagementTools
-Install-WindowsFeature -name RSAT -IncludeManagementTools
-Install-WindowsFeature -name RSAT-Feature-Tools -IncludeManagementTools
-Install-WindowsFeature -name RSAT-SNMP -IncludeManagementTools
-Install-WindowsFeature -name SNMP-Service -IncludeManagementTools
-Install-WindowsFeature -name WAS -IncludeManagementTools
-Install-WindowsFeature -name WAS-Process-Model -IncludeManagementTools
-Install-WindowsFeature -name WAS-Config-APIs -IncludeManagementTools
+Add-WindowsFeature 
+Web-Http-Redirect, 
+Web-DAV-Publishing, 
+Web-Custom-Logging, 
+Web-Log-Libraries, 
+Web-ODBC-Logging, 
+Web-Request-Monitor, 
+Web-Http-Tracing, 
+Web-Dyn-Compression, 
+Web-Basic-Auth, 
+Web-CertProvider, 
+Web-Client-Auth, 
+Web-Digest-Auth, 
+Web-Cert-Auth, 
+Web-Url-Auth, 
+Web-Windows-Auth, 
+Web-App-Dev, 
+Web-Net-Ext45, 
+Web-Asp-Net45, 
+NET-WCF-HTTP-Activation45, 
+NET-WCF-Pipe-Activation45, 
+NET-WCF-TCP-Activation45, 
+RSAT, 
+RSAT-Feature-Tools, 
+RSAT-SNMP, 
+SNMP-Service, 
+WAS, 
+WAS-Process-Model, 
+WAS-Config-APIs  
+-IncludeManagementTools
 
-Get-windowsFeature web-*
+Get-windowsFeature
