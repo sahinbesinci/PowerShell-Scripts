@@ -15,5 +15,17 @@ Install-WindowsFeature -name Web-Cert-Auth -IncludeManagementTools
 Install-WindowsFeature -name Web-Url-Auth -IncludeManagementTools
 Install-WindowsFeature -name Web-Windows-Auth -IncludeManagementTools
 Install-WindowsFeature -name Web-App-Dev -IncludeManagementTools
+Install-WindowsFeature -name Web-Net-Ext45 -IncludeManagementTools
+Install-WindowsFeature -name Web-Asp-Net45 -IncludeManagementTools
+Install-WindowsFeature -name NET-WCF-HTTP-Activation -IncludeManagementTools
+Install-WindowsFeature -name NET-WCF-Pipe-Activation -IncludeManagementTools
+Install-WindowsFeature -name NET-WCF-TCP-Activation -IncludeManagementTools
+Install-WindowsFeature -name RSAT -IncludeManagementTools
+Install-WindowsFeature -name RSAT-Feature-Tools -IncludeManagementTools
+Install-WindowsFeature -name RSAT-SNMP -IncludeManagementTools
+Install-WindowsFeature -name SNMP-Service -IncludeManagementTools
+Install-WindowsFeature -name WAS -IncludeManagementTools
+Install-WindowsFeature -name WAS-Process-Model -IncludeManagementTools
+Install-WindowsFeature -name WAS-Config-APIs -IncludeManagementTools
 
 Get-windowsFeature web-*
