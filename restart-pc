@@ -1,0 +1,5 @@
+$pc = "SRVZLOCK1","SRVSERVICES4","SRVAAUIP","SRVATMU2"
+
+foreach($name in $pc){
+  shutdown /r /m \\$name
+}
