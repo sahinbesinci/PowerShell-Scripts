@@ -1,0 +1,7 @@
+$Server = "SRVFW7"
+$ping = New-Object System.Net.NetworkInformation.Ping
+$ServerIP = ($ping.Send($Server).Address)
+
+#Check it in one-liner script
+$ping = New-Object System.Net.NetworkInformation.Ping
+Get-Content -path D:\Scripts\Computers.txt | foreach { "{0} - {1}" -f $_, ($ping.Send($_).Address) }
