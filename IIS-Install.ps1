@@ -1,5 +1,7 @@
 Install-WindowsFeature -name Web-Server -IncludeManagementTools
 
-Add-WindowsFeature Web-Http-Redirect, Web-DAV-Publishing, Web-Custom-Logging, Web-Log-Libraries, Web-ODBC-Logging, Web-Request-Monitor, Web-Http-Tracing, Web-Dyn-Compression, Web-Basic-Auth, Web-CertProvider, Web-Client-Auth, Web-Digest-Auth, Web-Cert-Auth, Web-Url-Auth, Web-Windows-Auth, Web-App-Dev, Web-Net-Ext45, Web-Asp-Net45, NET-WCF-HTTP-Activation45, NET-WCF-Pipe-Activation45, NET-WCF-TCP-Activation45, RSAT, RSAT-Feature-Tools, RSAT-SNMP, SNMP-Service, WAS, WAS-Process-Model, WAS-Config-APIs,Telnet-Client -IncludeManagementTools
+Add-WindowsFeature Web-Default-Doc, Web-Http-Errors, Web-Static-Content, Web-Http-Logging, Web-Request-Monitor, Web-Http-Tracing, Web-Stat-Compression, Web-Dyn-Compression, Web-Filtering, Web-Net-Ext45, Web-Asp-Net45, Web-AppInit, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Mgmt-Console, NET-WCF-HTTP-Activation45, NET-WCF-Pipe-Activation45, NET-WCF-TCP-Activation45, NET-WCF-TCP-PortSharing45, Web-Mgmt-Compat, Telnet-Client -IncludeManagementTools
+
+Remove-WindowsFeature Web-Dir-Browsing, XPS-Viewer -IncludeManagementTools
 
 Get-windowsFeature
